@@ -11,18 +11,27 @@ $date = date('Ymd', strtotime('+4day'));
 $fileName = 'page.' . $date . '.html';
 
 // 开始时间1（hour）
-$startTime1 = 11;
+$startTime1 = empty($argv[1]) ? "" : $argv[1];
 // 开始时间2（hour）
-$startTime2 = 12;
+$startTime2 = empty($argv[2]) ? "" : $argv[2];
 
 // 特定场地1
-$specialFieldNum1 = 1;
+$specialFieldNum1 = empty($argv[3]) ? "" : $argv[3];
 // 特定场地2
-$specialFieldNum2 = 2;
+$specialFieldNum2 = empty($argv[4]) ? "" : $argv[4];
+
+$params = [
+    "startTime1" => $startTime1,
+    "startTime2" => $startTime2,
+    "specialFieldNum1" => $specialFieldNum1,
+    "specialFieldNum2" => $specialFieldNum2,
+];
+
+echo json_encode($params, JSON_UNESCAPED_UNICODE);
 
 // cookie信息
-$cookie = 'JSESSIONID=F88A88428518057DB6469D1029F12010; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615179688; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1615179661; gr_session_id_ade9dc5496ada31e=a0e302e1-b824-44fe-8b4b-cd169137209a; gr_session_id_ade9dc5496ada31e_a0e302e1-b824-44fe-8b4b-cd169137209a=true; gr_user_id=90ec9f8d-dd59-42f1-9975-ce752bea7394';
-//$cookie = 'Cookie: JSESSIONID=0A25F1856333040D9A4AED16CAB272E6; gr_session_id_ade9dc5496ada31e_d6ed695e-3bc3-44bf-8866-5143ef694c9a=true; gr_session_id_ade9dc5496ada31e=d6ed695e-3bc3-44bf-8866-5143ef694c9a; gr_user_id=122c8be0-f534-4dbb-b29c-c84699dfcd53; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615127519; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1614556770,1614609610,1614913028,1615127509';
+//$cookie = 'JSESSIONID=F88A88428518057DB6469D1029F12010; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615179688; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1615179661; gr_session_id_ade9dc5496ada31e=a0e302e1-b824-44fe-8b4b-cd169137209a; gr_session_id_ade9dc5496ada31e_a0e302e1-b824-44fe-8b4b-cd169137209a=true; gr_user_id=90ec9f8d-dd59-42f1-9975-ce752bea7394';
+$cookie = 'Cookie: JSESSIONID=0A25F1856333040D9A4AED16CAB272E6; gr_session_id_ade9dc5496ada31e_d6ed695e-3bc3-44bf-8866-5143ef694c9a=true; gr_session_id_ade9dc5496ada31e=d6ed695e-3bc3-44bf-8866-5143ef694c9a; gr_user_id=122c8be0-f534-4dbb-b29c-c84699dfcd53; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615127519; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1614556770,1614609610,1614913028,1615127509';
 
 // 获取页面内容
 getPageContent($date, $fileName, $cookie);
