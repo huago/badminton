@@ -1,6 +1,7 @@
 <?php
 
-require('phpQuery/phpQuery/phpQuery.php');
+require_once(dirname(__FILE__).'/phpquery/phpQuery/phpQuery.php');
+
 
 date_default_timezone_set('Asia/Shanghai');
 
