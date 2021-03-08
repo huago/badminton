@@ -48,7 +48,7 @@ getPageContent($date, $fileName, $cookie);
 // 获取可用的场地信息
 $availableFields = getAvailableFields($fileName);
 
-echo date("Y-m-d H:i:s") . json_encode($availableFields, JSON_UNESCAPED_UNICODE) . PHP_EOL;
+//echo date("Y-m-d H:i:s") . json_encode($availableFields, JSON_UNESCAPED_UNICODE) . PHP_EOL;
 
 // 预定符合时间的特定场地
 bookSpecialFields($availableFields, $date, $specialFieldNum1, $specialFieldNum2, $startTime1, $startTime2, $cookie);
