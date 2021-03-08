@@ -27,7 +27,7 @@ $params = [
     "specialFieldNum2" => $specialFieldNum2,
 ];
 
-echo json_encode($params, JSON_UNESCAPED_UNICODE);
+echo date("Y-m-d H:i:s") . json_encode($params, JSON_UNESCAPED_UNICODE) . PHP_EOL;
 
 // cookie信息
 //$cookie = 'JSESSIONID=F88A88428518057DB6469D1029F12010; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615179688; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1615179661; gr_session_id_ade9dc5496ada31e=a0e302e1-b824-44fe-8b4b-cd169137209a; gr_session_id_ade9dc5496ada31e_a0e302e1-b824-44fe-8b4b-cd169137209a=true; gr_user_id=90ec9f8d-dd59-42f1-9975-ce752bea7394';
@@ -175,7 +175,7 @@ function commit($fieldInfoList, $date, $cookie)
     $cmd = "curl -H 'Host: webssl.xports.cn' -H 'Accept: */*' -H 'X-Requested-With: XMLHttpRequest' -H 'Accept-Language: zh-cn' -H 'Content-Type: application/json' -H 'Origin: https://webssl.xports.cn' -H 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x1800022e) NetType/WIFI Language/zh_CN' -H 'Referer: https://webssl.xports.cn/aisports-weixin/court/1101000301/1002/1254/20210222?venueName=%E5%8C%97%E4%BA%AC%E5%A4%A9%E9%80%9A%E8%8B%91%E4%BD%93%E8%82%B2%E9%A6%86&serviceName=%E7%BE%BD%E6%AF%9B%E7%90%83&fullTag=0&defaultFullTag=0' -H '" . $cookie . "' --data-binary '" . $jsonInfo . "' --compressed 'https://webssl.xports.cn/aisports-weixin/court/commit'";
     exec($cmd, $result);
 
-    echo json_encode($result, JSON_UNESCAPED_UNICODE) . PHP_EOL;
+    echo date("Y-m-d H:i:s") . json_encode($result, JSON_UNESCAPED_UNICODE) . PHP_EOL;
 
     $res = $result[0];
     $res = json_decode($res, true);
