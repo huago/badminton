@@ -2,6 +2,7 @@
 
 require_once(dirname(__FILE__).'/phpquery/phpQuery/phpQuery.php');
 
+//test hook
 
 date_default_timezone_set('Asia/Shanghai');
 
