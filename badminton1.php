@@ -2,6 +2,8 @@
 
 require_once(dirname(__FILE__).'/phpquery/phpQuery/phpQuery.php');
 
+$infos = include dirname(__FILE__).'/info.php';
+
 //test hooks again
 
 date_default_timezone_set('Asia/Shanghai');
@@ -12,17 +14,17 @@ $date = date('Ymd', strtotime('+4day'));
 $fileName = sprintf("page1.%s.html", $date);
 
 // 开始时间1（hour）
-$startTime1 = 11;
+$startTime1 = $infos[0]['time']['time1'];
 // 开始时间2（hour）
-$startTime2 = 12;
+$startTime2 = $infos[0]['time']['time2'];
 
 // 特定场地1
-$specialFieldNum1 = 11;
+$specialFieldNum1 = $infos[0]['field']['num1'];
 // 特定场地2
-$specialFieldNum2 = 12;
+$specialFieldNum2 = $infos[0]['field']['num2'];
 
 // cookie信息
-$cookie = '';
+$cookie = $infos[0]['cookie'];
 
 $params = [
     "startTime1" => $startTime1,
