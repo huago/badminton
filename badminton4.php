@@ -12,17 +12,17 @@ $date = date('Ymd', strtotime('+4day'));
 $fileName = 'page4.' . $date . '.html';
 
 // 开始时间1（hour）
-$startTime1 = $infos[0]['time']['time1'];
+$startTime1 = $infos[3]['time']['time1'];
 // 开始时间2（hour）
-$startTime2 = $infos[0]['time']['time2'];
+$startTime2 = $infos[3]['time']['time2'];
 
 // 特定场地1
-$specialFieldNum1 = $infos[0]['field']['num1'];
+$specialFieldNum1 = $infos[3]['field']['num1'];
 // 特定场地2
-$specialFieldNum2 = $infos[0]['field']['num2'];
+$specialFieldNum2 = $infos[3]['field']['num2'];
 
 // cookie信息
-$cookie = $infos[0]['cookie'];
+$cookie = $infos[3]['cookie'];
 
 $params = [
     "startTime1" => $startTime1,
