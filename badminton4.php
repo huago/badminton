@@ -7,39 +7,30 @@ date_default_timezone_set('Asia/Shanghai');
 // 抢场地日期
 $date = date('Ymd', strtotime('+4day'));
 
-$fileName = 'page.' . $date . '.html';
+$fileName = 'page4.' . $date . '.html';
 
 // 开始时间1（hour）
-$startTime1 = empty($argv[1]) ? "" : $argv[1];
+$startTime1 = 11;
 // 开始时间2（hour）
-$startTime2 = empty($argv[2]) ? "" : $argv[2];
+$startTime2 = 12;
 
 // 特定场地1
-$specialFieldNum1 = empty($argv[3]) ? "" : $argv[3];
+$specialFieldNum1 = 11;
 // 特定场地2
-$specialFieldNum2 = empty($argv[4]) ? "" : $argv[4];
+$specialFieldNum2 = 12;
 
-$cookieKey = empty($argv[5]) ? "" : $argv[5];
+// cookie信息
+$cookie = '';
 
 $params = [
     "startTime1" => $startTime1,
     "startTime2" => $startTime2,
     "specialFieldNum1" => $specialFieldNum1,
     "specialFieldNum2" => $specialFieldNum2,
-    "cookieKey" => $cookieKey,
+    "cookie" => $cookie,
 ];
 
 echo date("Y-m-d H:i:s") . json_encode($params, JSON_UNESCAPED_UNICODE) . PHP_EOL;
-
-// cookie信息
-$cookies = [
-    'zl' => 'Cookie: JSESSIONID=F88A88428518057DB6469D1029F12010; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615213429; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1615179661; gr_user_id=90ec9f8d-dd59-42f1-9975-ce752bea7394; gr_session_id_ade9dc5496ada31e=70a1c83a-636b-479e-8f98-2a65962793e4; gr_session_id_ade9dc5496ada31e_70a1c83a-636b-479e-8f98-2a65962793e4=true',
-    'xh' => 'Cookie: JSESSIONID=B57E2DC3F08A30CA4306B737344FAD61; gr_session_id_ade9dc5496ada31e=a9f48ef2-5b62-454f-95be-e397f433efb0; gr_session_id_ade9dc5496ada31e_a9f48ef2-5b62-454f-95be-e397f433efb0=true; gr_user_id=7be9f53e-e4e3-41e4-b6cf-b20665ba8902; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615213286; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1615213193',
-    'yb' => 'Cookie: JSESSIONID=77A89614670CAF4C7802ED083128803C; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615214070; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1614609610,1614913028,1615127509,1615179649; gr_session_id_ade9dc5496ada31e=4656a37b-8f4e-43bf-a0f1-4ff4acbcebee; gr_session_id_ade9dc5496ada31e_4656a37b-8f4e-43bf-a0f1-4ff4acbcebee=false; gr_user_id=122c8be0-f534-4dbb-b29c-c84699dfcd53',
-    'hh' => 'Cookie: JSESSIONID=4468160F5BC4C16A17B1E5B9DF4C2786; gr_session_id_ade9dc5496ada31e=d1db7503-a5a1-4dca-8bb9-289b8ddde021; gr_session_id_ade9dc5496ada31e_d1db7503-a5a1-4dca-8bb9-289b8ddde021=true; gr_user_id=65a3ff5b-de50-4c17-9edb-51fa9fcb9cb1; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1615214275; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1615127764,1615127865,1615127926,1615214265',
-];
-
-$cookie = $cookies[$cookieKey];
 
 // 获取页面内容
 getPageContent($date, $fileName, $cookie);
