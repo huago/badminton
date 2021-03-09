@@ -2,6 +2,8 @@
 
 require_once(dirname(__FILE__).'/phpquery/phpQuery/phpQuery.php');
 
+//test hooks again
+
 date_default_timezone_set('Asia/Shanghai');
 
 // 抢场地日期
