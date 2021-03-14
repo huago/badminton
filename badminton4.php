@@ -2,7 +2,7 @@
 
 require_once(dirname(__FILE__).'/phpquery/phpQuery/phpQuery.php');
 
-$infos = include dirname(__FILE__).'/info.php';
+$infos = include dirname(__FILE__).'/config.php';
 
 date_default_timezone_set('Asia/Shanghai');
 
