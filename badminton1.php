@@ -4,7 +4,7 @@ require_once(dirname(__FILE__).'/phpquery/phpQuery/phpQuery.php');
 
 $infos = include dirname(__FILE__).'/config.php';
 
-//test hooks again
+//test hooks again 4
 
 date_default_timezone_set('Asia/Shanghai');
 
