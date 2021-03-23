@@ -9,7 +9,7 @@ $infos = include dirname(__FILE__).'/config.php';
 date_default_timezone_set('Asia/Shanghai');
 
 // 抢场地日期
-$date = date('Ymd', strtotime('+4day'));
+$date = date('Ymd', strtotime('+3day'));
 
 $fileName = sprintf("page1.%s.html", $date);
 
