@@ -42,5 +42,6 @@ return array(
             'num1' => 13,
             'num2' => 14
         ),
-    ),'cookie' => "Cookie: JSESSIONID=4A9CA4C051AF2A25670F958EA2A6AAC6; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1617025629; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1616596716,1616942582,1616976254,1617025614; gr_user_id=65a3ff5b-de50-4c17-9edb-51fa9fcb9cb1; gr_session_id_ade9dc5496ada31e=9761553d-338c-4ddb-b354-7bf975cb2023; gr_session_id_ade9dc5496ada31e_9761553d-338c-4ddb-b354-7bf975cb2023=true"
+        'cookie' => "Cookie: JSESSIONID=4A9CA4C051AF2A25670F958EA2A6AAC6; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1617025629; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1616596716,1616942582,1616976254,1617025614; gr_user_id=65a3ff5b-de50-4c17-9edb-51fa9fcb9cb1; gr_session_id_ade9dc5496ada31e=9761553d-338c-4ddb-b354-7bf975cb2023; gr_session_id_ade9dc5496ada31e_9761553d-338c-4ddb-b354-7bf975cb2023=true"
+    ),
 );
