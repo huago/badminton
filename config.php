@@ -2,8 +2,8 @@
 return array(
     array(
         'time' => array(
-            'time1' => 20,
-            'time2' => 21
+            'time1' => 16,
+            'time2' => 17
         ),
         'field' => array(
             'num1' => 7,
@@ -13,8 +13,8 @@ return array(
     ),
     array(
         'time' => array(
-            'time1' => 20,
-            'time2' => 21
+            'time1' => 16,
+            'time2' => 17
         ),
         'field' => array(
             'num1' => 9,
@@ -24,8 +24,8 @@ return array(
     ),
     array(
         'time' => array(
-            'time1' => 20,
-            'time2' => 21
+            'time1' => 16,
+            'time2' => 17
         ),
         'field' => array(
             'num1' => 11,
@@ -35,8 +35,8 @@ return array(
     ),
     array(
         'time' => array(
-            'time1' => 20,
-            'time2' => 21
+            'time1' => 16,
+            'time2' => 17
         ),
         'field' => array(
             'num1' => 13,
