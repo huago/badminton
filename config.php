@@ -31,7 +31,7 @@ return array(
             'num1' => 11,
             'num2' => 12
         ),
-        'cookie' => "Cookie: SESSIONID=A7F65AC6C0581FF5E98C6DF0D289AA4E; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1617622258; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1617621630; gr_user_id=ffd9260f-e78a-46d0-93f5-c6a4f1b3d9f0; gr_session_id_ade9dc5496ada31e_315e0207-46c4-4e7b-a6c9-5464867f3aa4=true; gr_session_id_ade9dc5496ada31e=315e0207-46c4-4e7b-a6c9-5464867f3aa4"
+        'cookie' => "Cookie: JSESSIONID=A7F65AC6C0581FF5E98C6DF0D289AA4E; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1617622258; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1617621630; gr_user_id=ffd9260f-e78a-46d0-93f5-c6a4f1b3d9f0; gr_session_id_ade9dc5496ada31e_315e0207-46c4-4e7b-a6c9-5464867f3aa4=true; gr_session_id_ade9dc5496ada31e=315e0207-46c4-4e7b-a6c9-5464867f3aa4"
     ),
     array(
         'time' => array(
