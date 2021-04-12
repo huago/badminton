@@ -44,7 +44,6 @@ return array(
         ),
         'cookie' => 'Cookie: JSESSIONID=D764155A02BC0A7FB9379D0885CFD69A; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1618235006; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1618234999; gr_session_id_ade9dc5496ada31e=134aa54b-48a1-4320-9f59-8a3c72b66ffd; gr_session_id_ade9dc5496ada31e_134aa54b-48a1-4320-9f59-8a3c72b66ffd=true; gr_user_id=66061163-bb0d-4099-aafc-0b4b83327b88'
     ),
-    ,
     array(
         'time' => array(
             'time1' => 11,
