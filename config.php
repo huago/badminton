@@ -39,8 +39,8 @@ return array(
             'time2' => 21
         ),
         'field' => array(
-            'num1' => 8,
-            'num2' => 7
+            'num1' => 5,
+            'num2' => 4
         ),
         'cookie' => 'Cookie: JSESSIONID=796111A8D71C3BEB29028595CAC48FD0; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1621173211; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1621173199; gr_session_id_ade9dc5496ada31e=01e87c2b-d855-402a-ad6c-b9d48a701090; gr_session_id_ade9dc5496ada31e_01e87c2b-d855-402a-ad6c-b9d48a701090=false; gr_user_id=05a25cb6-c10d-42c2-a882-25ddc246caed'
     ),
@@ -50,8 +50,8 @@ return array(
            'time2' => 21
         ),
         'field' => array(
-            'num1' => 5,
-            'num2' => 10
+            'num1' => 7,
+            'num2' => 8
         ),
         'cookie' => 'Cookie: JSESSIONID=B00CC22AD26E51A7DE14A3A8BDF7A0CC; gr_user_id=f000d006-c580-4aa3-9da4-2f9fcdad1e21; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1621176433; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1620658355,1620987215,1621048154,1621176413; gr_session_id_ade9dc5496ada31e_2742b75a-9bcc-409c-895d-1cf6a168f9dc=true; gr_session_id_ade9dc5496ada31e=2742b75a-9bcc-409c-895d-1cf6a168f9dc'
     ),
