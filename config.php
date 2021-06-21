@@ -53,6 +53,6 @@ return array(
             'num1' => 5,
             'num2' => 10
         ),
-        'cookie' => ''
+        'cookie' => 'Cookie: JSESSIONID=9BCD41EB84BE1833CBBAF7814623215D; gr_session_id_ade9dc5496ada31e=9eaf1ba5-9af1-4a64-b734-dadb319cb3b6; gr_session_id_ade9dc5496ada31e_9eaf1ba5-9af1-4a64-b734-dadb319cb3b6=true; gr_user_id=31bdafc8-8e16-4a2e-b1e2-0b6728b232a9; Hm_lpvt_bc864c0a0574a7cabe6b36d53206fb69=1624286654; Hm_lvt_bc864c0a0574a7cabe6b36d53206fb69=1623715342,1624200660,1624233810,1624286650'
     ),
 );
